@@ -16,7 +16,7 @@ class App extends Component {
         return (
             <div className="introduce">
                 <a
-                    class="github-fork-ribbon right-top"
+                    className="github-fork-ribbon right-top"
                     href="https://github.com/zxpsuper/createReact"
                     title="Fork me on GitHub"
                 >
