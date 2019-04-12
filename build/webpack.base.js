@@ -76,6 +76,7 @@ module.exports = {
             //允许 HappyPack 输出日志
             verbose: true,
         }),
+        // 静态资源复制至生成的static文件夹
         new CopyWebpackPlugin([
             {
                 from: path.resolve(__dirname, '../static'),

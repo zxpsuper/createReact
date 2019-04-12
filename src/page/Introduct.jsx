@@ -2,19 +2,24 @@
  * @Author: super
  * @Date: 2019-04-11 17:18:31
  * @Last Modified by: super
- * @Last Modified time: 2019-04-12 15:31:37
+ * @Last Modified time: 2019-04-12 17:22:32
  * @ function 组件，使用 react hook
  */
-import { useState, useEffect } from 'react';
-import React, { Component } from 'react';
 
-function firstStep() {
+/**
+ * 基于 react hook 的实践，函数组件与类组件的不同
+ */
+import { useState, useEffect } from 'react';
+import React from 'react';
+
+function Introduct() {
+    // count = 0 , setCount 为 count 的设置方法
     const [count, setCount] = useState(0);
 
     // 类似于componentDidMount 和 componentDidUpdate:
     useEffect(() => {
-        // 更新文档的标题
-        document.title = `You clicked ${count} times`;
+        // 控制台打印
+        console.log(`You clicked ${count} times`);
     });
 
     return (
@@ -43,4 +48,4 @@ function firstStep() {
     );
 }
 
-export default firstStep;
+export default Introduct;

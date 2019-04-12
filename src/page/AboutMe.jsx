@@ -2,7 +2,7 @@
  * @Author: super
  * @Date: 2019-04-11 17:32:02
  * @Last Modified by: super
- * @Last Modified time: 2019-04-12 16:36:11
+ * @Last Modified time: 2019-04-12 17:23:05
  */
 /**
  * PropTypes 用于类型判断错误提示, styled-components 组件样式处理
@@ -30,7 +30,7 @@ Blog.propTypes = {
 
 @inject('globalState')
 @observer
-class SecondStep extends Component {
+class AboutMe extends Component {
     render() {
         const Title = styled.h1`
             font-size: 1.5em;
@@ -53,7 +53,9 @@ class SecondStep extends Component {
                     <a href="https://github.com/zxpsuper">github</a>
                     <a href="https://zxpsuper.github.io/">Blog</a>
                 </p>
+
                 <Blog title="my blog: https://zxpsuper.github.io" />
+
                 <div>
                     <p>You clicked {this.props.globalState.clickTime} times</p>
                     <button
@@ -67,4 +69,4 @@ class SecondStep extends Component {
     }
 }
 
-export default SecondStep;
+export default AboutMe;

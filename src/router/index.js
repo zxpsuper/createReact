@@ -1,12 +1,11 @@
-import Home from '../home';
-import firstStep from '../page/firstStep';
-import secondStep from '../page/secondStep';
+import Home from '@/home';
+import Introduct from '@/page/Introduct';
+import AboutMe from '@/page/AboutMe';
 
 export default [
     {
         path: '/',
         component: Home,
-        redirect: '/introduct',
     },
     {
         path: '/home',
@@ -14,10 +13,10 @@ export default [
     },
     {
         path: '/introduct',
-        component: firstStep,
+        component: Introduct,
     },
     {
         path: '/about_me',
-        component: secondStep,
+        component: AboutMe,
     },
 ];
