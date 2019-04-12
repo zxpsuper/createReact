@@ -2,7 +2,7 @@
  * @Author: super
  * @Date: 2019-04-11 17:18:31
  * @Last Modified by: super
- * @Last Modified time: 2019-04-12 17:22:32
+ * @Last Modified time: 2019-04-12 17:47:13
  * @ function 组件，使用 react hook
  */
 
@@ -35,7 +35,9 @@ function Introduct() {
                 </a>
                 .
             </p>
-            <p>This project will help you create a vue project step by step.</p>
+            <p>
+                This project will help you create a React project step by step.
+            </p>
             <p>
                 You can learn webpack, react, react-router-dom, mobx, proxy and
                 so on.
