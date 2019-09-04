@@ -2,7 +2,7 @@
  * @Author: super
  * @Date: 2019-04-11 17:32:02
  * @Last Modified by: super
- * @Last Modified time: 2019-04-12 17:23:05
+ * @Last Modified time: 2019-09-04 15:10:22
  */
 /**
  * PropTypes 用于类型判断错误提示, styled-components 组件样式处理
@@ -12,6 +12,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { inject, observer } from 'mobx-react';
 
+// mobx 使用
 @inject('globalState')
 @observer
 class Blog extends Component {
