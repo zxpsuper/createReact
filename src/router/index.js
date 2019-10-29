@@ -1,6 +1,7 @@
 import Home from '@/home';
 import Introduct from '@/page/Introduct';
 import AboutMe from '@/page/AboutMe';
+import ReactHook from '@/page/ReactHook';
 
 export default [
     {
@@ -18,5 +19,9 @@ export default [
     {
         path: '/about_me',
         component: AboutMe,
+    },
+    {
+        path: '/react_hook',
+        component: ReactHook,
     },
 ];

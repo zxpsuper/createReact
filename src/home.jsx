@@ -5,9 +5,7 @@ class App extends Component {
     constructor(props) {
         super(props);
     }
-    componentDidMount() {
-        this.props.history.push('/introduct');
-    }
+    componentDidMount() {}
     render() {
         const NavLink = styled(Link)`
             color: #007fff;
@@ -32,6 +30,7 @@ class App extends Component {
                 <div className="flex y-center x-center router-link">
                     <NavLink to="/introduct">Introduce</NavLink>
                     <NavLink to="/about_me">About me</NavLink>
+                    <NavLink to="/react_hook">React Hook</NavLink>
                 </div>
             </div>
         );

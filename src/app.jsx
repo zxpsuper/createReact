@@ -2,9 +2,9 @@ import React from 'react';
 import { HashRouter as Router, Redirect, Route } from 'react-router-dom';
 import routes from './router/index';
 import RouteWithSubRoutes from './RouteWithSubRoutes';
+import DevTools from 'mobx-react-devtools'; // mobx调试工具
 
 import './index.less';
-import DevTools from 'mobx-react-devtools'; // mobx调试工具
 
 const App = () => (
     <Router>

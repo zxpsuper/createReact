@@ -2,17 +2,17 @@
  * @Author: super
  * @Date: 2019-04-11 17:32:02
  * @Last Modified by: super
- * @Last Modified time: 2019-09-04 15:10:22
+ * @Last Modified time: 2019-09-04 15:34:02
  */
 /**
  * PropTypes 用于类型判断错误提示, styled-components 组件样式处理
+ * mobx 全局状态管理的使用实例
  */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { inject, observer } from 'mobx-react';
 
-// mobx 使用
 @inject('globalState')
 @observer
 class Blog extends Component {
@@ -21,7 +21,14 @@ class Blog extends Component {
     }
     componentDidMount() {}
     render() {
-        return <div>{this.props.title}</div>;
+        return (
+            <div>
+                {this.props.title}
+                <div style={{ marginTop: '10px' }}>
+                    mobx-globalState-count: {this.props.globalState.clickTime}
+                </div>
+            </div>
+        );
     }
 }
 

@@ -9,8 +9,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 // 压缩CSS和JS代码
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-
+// const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 module.exports = merge(common, {
     optimization: {

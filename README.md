@@ -1,4 +1,4 @@
-# createVue
+# createReact
 
 本项目基于 webpack4 搭建 React 项目。
 
