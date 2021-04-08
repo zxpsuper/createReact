@@ -6,7 +6,7 @@
  */
 /**
  * PropTypes 用于类型判断错误提示, styled-components 组件样式处理
- * mobx 全局状态管理的使用实例
+ * mobx 全局状态管理的使用实例 la
  */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
