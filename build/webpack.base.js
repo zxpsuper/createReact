@@ -16,7 +16,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(js|jsx)$/,
+                test: /\.(js|jsx|tsx)$/,
                 exclude: /node_modules/,
                 use: {
                     // loader: 'babel-loader',
@@ -86,7 +86,7 @@ module.exports = {
         ]),
     ], // 插件
     resolve: {
-        extensions: ['.js', '.jsx'],
+        extensions: ['.js', '.jsx', '.tsx', '.json', '.ts'],
         alias: {
             '@': resolve('src'),
         },

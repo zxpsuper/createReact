@@ -1,7 +1,4 @@
 import React, {
-    useState,
-    useEffect,
-    useMemo,
     createContext,
     useContext,
     useReducer,
@@ -36,7 +33,7 @@ let Button = styled.button`
     margin: 0 4px;
 `;
 const UPDATE_COLOR = 'UPDATE_COLOR'; // 更新颜色
-const reducer = (state, action) => {
+const reducer = (state: any, action: { type: any; color: any; }) => {
     switch (action.type) {
         case UPDATE_COLOR:
             return action.color;
@@ -81,7 +78,7 @@ export default function ReactHook() {
 }
 
 const ButtonGroup = props => {
-    const { dispatchColor } = useContext(ColorContext);
+    const { dispatchColor } = useContext<any>(ColorContext);
     return (
         <React.Fragment>
             <Button

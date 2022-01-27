@@ -13,10 +13,15 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { inject, observer } from 'mobx-react';
 
+type Props = {
+    title: string,
+    globalState: any,
+}
+
 @inject('globalState')
 @observer
-class Blog extends Component {
-    constructor(props) {
+class Blog extends Component<Props,any> {
+    constructor(props: Props) {
         super(props);
     }
     componentDidMount() {}
@@ -31,9 +36,9 @@ class Blog extends Component {
         );
     }
 }
-
+// @ts-ignore
 Blog.propTypes = {
-    title: PropTypes.number,
+    title: PropTypes.string,
 };
 
 @inject('globalState')

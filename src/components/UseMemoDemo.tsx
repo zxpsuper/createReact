@@ -10,8 +10,8 @@ export default function UseMemoDemo() {
 
     return (
         <div>
-            <Button onClick={() => setName(new Date().getTime())}>name</Button>
-            <Button onClick={() => setContent(new Date().getTime())}>
+            <Button onClick={() => setName(new Date().getTime() + '')}>name</Button>
+            <Button onClick={() => setContent(new Date().getTime() + '')}>
                 content
             </Button>
             <Demo name={name}>{content}</Demo>
